@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+.all {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+#logo {
+  font-size: 5vw;
+  font-family: "Tangerine", serif;
+  color: gold;
+}
+.Navigation {
+  margin: 0;
+  color: whitesmoke;
+}
+
+.navbar-nav > li > a {
+  color: gold !important;
+  font-weight: 500;
+  font-size: 1.25vw;
+  padding-left: 5vw;
+}
+.nav a.nav-link {
+  cursor: pointer;
+}
+.nav-item {
+  padding-left: 1.6vw;
+}
+.navbar-nav > li > a:hover{
+  color: black !important;
+  background-color: gold;
+  border-radius: 0.2vw;
+  transition: background-color 0.5s ease-in;
+}
+
+#Home{
+  background-color: rgb(68, 92, 40);
+}
+#AboutMe {
+  background-color: red;
+}
+#Skillset{
+  background-color: pink;
+}
+#Education{
+}
+#Projects{
+  background-color: tan;
+}
+#Contact{
+  background-color: black;
+  color: white;
+}
+#navpos{
+  position: fixed;
+  top:0;
+  width: 100vw;
+}
