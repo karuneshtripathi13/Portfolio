@@ -4,6 +4,8 @@
 }
 body{
   height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 section {
   display: flex;
@@ -54,7 +56,10 @@ section {
 }
 
 #Home{
-  background-color: rgb(68, 92, 40);
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
 }
 #AboutMe {
   background-color: red;
@@ -68,11 +73,73 @@ section {
   background-color: tan;
 }
 #Contact{
-  background-color: black;
-  color: white;
+  background-color: rgb(68, 92, 40);
 }
 #navpos{
+  display: none;
   position: fixed;
   top:0;
   width: 100vw;
+  padding-left: 1%;
+}
+.homexplore{
+  position: absolute;
+  z-index: 3;
+  display: block;
+  width: 25vw;
+  text-decoration: none;
+  padding: 1%;
+  margin-left: 19.5vw;
+  margin-top: 1%;
+  border: solid 2px;
+  border-color: white;
+  color: white;
+  font-size: 1.7vw;
+}
+.homexplore:hover{
+  background-color: gold;
+  color: black;
+  border-color: black;
+}
+.arrow{
+  transition: transform 0.5s ease;
+}
+.homexplore:hover .arrow{
+ transform: rotate(90deg);
+}
+.typing{
+  z-index: 3;
+  font-size: 2vw;
+  color: white;
+  font-weight: 500;
+}
+.hello{
+  z-index: 3;
+  font-size: 5vw;
+  font-weight: 500;
+  color: white;
+}
+.interest{
+  z-index: 3;
+  font-size: 3vw;
+  font-weight: 500;
+  color: white;
+}
+.name{
+  z-index: 3;
+  display: inline;
+  color: gold;
+}
+.particles{
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.tsparticles-canvas-el{
+  z-index: 1;
 }
