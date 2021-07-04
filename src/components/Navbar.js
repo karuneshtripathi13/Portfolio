@@ -4,9 +4,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   return (
     <nav id="navpos" className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div style={{display:"inline",height:"6vw"}}>
       <a id="logo" className="navbar-brand" href="#Home" style={{padding:0,paddingLeft:10,margin:0,paddingRight:50}}>
         KT
       </a>
+      </div>
       <button
         className="navbar-toggler"
         type="button"
