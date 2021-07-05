@@ -45,8 +45,7 @@ const Education = () => {
           size={"5x"}
           style={{
             marginTop: "2vw",
-            color: "tan",
-            border: "5px solid black",
+            color: "#212529",
             borderRadius: "5vw",
           }}
         />

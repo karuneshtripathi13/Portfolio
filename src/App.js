@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Aboutme from './components/Aboutme/Aboutme';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
+import Projects from './components/Projects/Projects';
 function App() {
   window.addEventListener("scroll",()=>{
     const scrollsz=window.innerHeight
@@ -11,6 +12,7 @@ function App() {
     console.log(scrolledy)
     if(Math.ceil(scrolledy)<=scrollsz-50)
     {
+      if(document.getElementById("navpos")!=null)
       document.getElementById("navpos").style.display="none"
     }
     else if(Math.ceil(scrolledy)>=scrollsz-window.innerHeight/5 &&Math.ceil(scrolledy)<(2*scrollsz)-window.innerHeight/2)
@@ -20,21 +22,25 @@ function App() {
         document.getElementById("ab").style.cssText="color: black !important;background-color: gold;border-radius: 0.2vw;transition: background-color 0.5s ease-in;"
       }
     else if(Math.ceil(scrolledy)>=(2*scrollsz)-window.innerHeight/2 &&Math.ceil(scrolledy)<(3*scrollsz)-window.innerHeight/2){
+      document.getElementById("navpos").style.display="flex"
       document.getElementById("ab").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("sk").style.cssText="color: black !important;background-color: gold;border-radius: 0.2vw;transition: background-color 0.5s ease-in;"
       document.getElementById("ed").style.cssText="color:;font-weight:;font-size:;"
     }
-    else if(Math.ceil(scrolledy)>=(3*scrollsz)-window.innerHeight/2 &&Math.ceil(scrolledy)<(4*scrollsz)-window.innerHeight/2){
+    else if(Math.ceil(scrolledy)>=(3*scrollsz)-window.innerHeight/2 &&Math.ceil(scrolledy)<Math.ceil((4.4*scrollsz))-window.innerHeight/2){
+      document.getElementById("navpos").style.display="flex"
       document.getElementById("pr").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("sk").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("ed").style.cssText="color: black !important;background-color: gold;border-radius: 0.2vw;transition: background-color 0.5s ease-in;"
     }
-    else if(Math.ceil(scrolledy)>=(4*scrollsz)-window.innerHeight/2 &&Math.ceil(scrolledy)<(5*scrollsz)-window.innerHeight/2){
+    else if(Math.ceil(scrolledy)>=Math.ceil((4.4*scrollsz))-window.innerHeight/2 &&Math.ceil(scrolledy)<(6*scrollsz)-window.innerHeight/2){
+      document.getElementById("navpos").style.display="flex"
       document.getElementById("co").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("ed").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("pr").style.cssText="color: black !important;background-color: gold;border-radius: 0.2vw;transition: background-color 0.5s ease-in;"
     }
     else if(Math.ceil(scrolledy)>=(5*scrollsz)-window.innerHeight/2 &&Math.ceil(scrolledy)<(6*scrollsz)-window.innerHeight/2){
+      document.getElementById("navpos").style.display="flex"
       document.getElementById("pr").style.cssText="color:;font-weight:;font-size:;"
       document.getElementById("co").style.cssText="color: black !important;background-color: gold;border-radius: 0.2vw;transition: background-color 0.5s ease-in;"
     }
@@ -56,7 +62,7 @@ function App() {
           <Education/>
         </section>
         <section id="Projects">
-          Hello 4
+          <Projects/>
         </section>
         <section id="Contact">
           Hello 5
