@@ -30,6 +30,14 @@ section {
   font-family: "Tangerine", serif;
   color: gold;
 }
+#navpos{
+  display: none;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  padding-left: 1%;
+  z-index: 3;
+}
 .Navigation {
   margin: 0;
   color: whitesmoke;
@@ -68,20 +76,13 @@ section {
   background-color: white;
 }
 #Education{
-  background-color: hotpink;
+  background-color: #eee;
 }
 #Projects{
   background-color: tan;
 }
 #Contact{
   background-color: rgb(68, 92, 40);
-}
-#navpos{
-  display: none;
-  position: fixed;
-  top:0;
-  width: 100vw;
-  padding-left: 1%;
 }
 .homexplore{
   position: absolute;

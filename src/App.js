@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Aboutme from './components/Aboutme/Aboutme';
 import Skills from './components/Skills/Skills';
+import Education from './components/Education/Education';
 function App() {
   window.addEventListener("scroll",()=>{
     const scrollsz=window.innerHeight
@@ -52,7 +53,7 @@ function App() {
           <Skills/>
         </section>
         <section id="Education">
-          Hello3
+          <Education/>
         </section>
         <section id="Projects">
           Hello 4

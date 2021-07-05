@@ -1,5 +1,5 @@
 #Skillset{
-    height: 100vh;
+    min-height: 100vh;
 }
 .skillsetheading{
     color: black;
@@ -53,6 +53,7 @@
   font-weight: 650;
 }
 .reactlogoanimation{
+    z-index: 0;
     animation: rotation 10s infinite linear;
 }
 @keyframes rotation {
