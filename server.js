@@ -4,7 +4,7 @@ const nodemailer=require('nodemailer')
 const cors=require('cors')
 const app=express()
 const path=require('path')
-const PORT=8080|process.env.PORT|
+const PORT=8080||process.env.PORT
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
@@ -53,9 +53,9 @@ app.post('/api/forma',(req,res)=>{
     smtptransport.close()
 })
 if (process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"));
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname,"client",  "build", "index.html"));
-    });
-  }
+      app.use(express.static("client/build"));
+      app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname,"client",  "build", "index.html"));
+      });
+    }
 app.listen( PORT,()=>console.log(`Server Started...${PORT}`));
