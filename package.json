@@ -1,50 +1,33 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.0.2",
-    "mdbreact": "^5.0.2",
-    "node-sass": "4.14.1",
-    "react": "^17.0.2",
-    "react-bar-chart": "^0.1.2",
-    "react-dom": "^17.0.2",
-    "react-particles-js": "^3.5.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.2",
-    "react-tsparticles": "^1.30.2",
-    "react-typed": "^1.2.0",
-    "web-vitals": "^1.0.1"
-  },
+  "version": "1.0.0",
+  "description": "Portfolio website of karunesh",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "server":"nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently run \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karuneshtripathi13/Portfolio.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "karunesh"
+  ],
+  "author": "Karunesh Tripathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karuneshtripathi13/Portfolio/issues"
+  },
+  "homepage": "https://github.com/karuneshtripathi13/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.2",
+    "nodemon": "^2.0.9"
   }
 }

@@ -1,5 +1,5 @@
 #Projects{
-    min-height: 125vh;
+    min-height: 120vh;
 }
 .projectheading{
     color: white;
@@ -31,13 +31,13 @@
     z-index: 2;
     position: absolute;
     left: 74vw;
-    top:512vh
+    top:505vh
 }
 .prev{
     z-index: 2;
     position: absolute;
     left: 22vw;
-    top:512vh
+    top:505vh
 }
 .details{
     font-size: 0.7vw;
