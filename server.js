@@ -14,7 +14,6 @@ app.get('/',(req,res)=>{
 })
 app.post('/api/forma',(req,res)=>{
     let data=req.body
-    console.log(data)
     let smtptransport=nodemailer.createTransport({
         service:"Gmail",
         port:465,
@@ -25,7 +24,7 @@ app.post('/api/forma',(req,res)=>{
     })
     let mailoptions={
         from:data.email,
-        to:"karuneshtoblackhole@gmail.com",
+        to:"karuneshtripathi13@gmail.com",
         subject:`Message from ${data.firstn} ${data.lastn} through karuneshtripathi.com`,
         html:`
         <h3>Information</h3>
