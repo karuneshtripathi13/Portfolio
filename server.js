@@ -54,4 +54,4 @@ if (process.env.NODE_ENV === "production"){
       });
     }
 var PORT=8080||process.env.PORT
-app.listen( PORT,"0.0.0.0",()=>console.log(`Server Started new...${PORT}`));
+app.listen( PORT,()=>console.log(`Server Started new...${PORT}`));
