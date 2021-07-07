@@ -9,9 +9,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
 
-app.get('/',(req,res)=>{
-    resizeBy.send("welcome")
-})
 app.post('/api/forma',(req,res)=>{
     let data=req.body
     let smtptransport=nodemailer.createTransport({
