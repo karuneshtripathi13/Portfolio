@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
 app.get("/",(req,res)=>{
-    res.sendFile("./client/build/index.html")
+    res.sendFile(path.resolve(__dirname,"client",  "build", "index.html"))
 })
 app.post('/api/forma',(req,res)=>{
     let data=req.body
