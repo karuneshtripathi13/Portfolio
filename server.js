@@ -4,7 +4,6 @@ const nodemailer=require('nodemailer')
 const cors=require('cors')
 const app=express()
 const path=require('path')
-const PORT=8080||process.env.PORT
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
@@ -54,4 +53,5 @@ if (process.env.NODE_ENV === "production"){
         res.sendFile(path.resolve(__dirname,"client",  "build", "index.html"));
       });
     }
-app.listen( PORT,()=>console.log(`Server Started...${PORT}`));
+var PORT=8080||process.env.PORT
+app.listen( PORT,"0.0.0.0",()=>console.log(`Server Started new...${PORT}`));
